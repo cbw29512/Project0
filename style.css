@@ -25,6 +25,7 @@ div#title-container {
 
 div#title {
     display: flex;
+    margin-top: 20px;;
 }
 
 h1 {
@@ -35,6 +36,14 @@ h2{
     font-size: 32px;
     z-index: 1;
     margin-top: -25px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    box-shadow: 0 0 0 38px white inset !important;
+    font-size: 18px;
 }
 
 /* Whole Project End */
@@ -60,11 +69,11 @@ div.bar:focus-within {
 input.searchbar {
     height:45px;
     border:none;
-    width:500px;
     border-radius: 33px;
-    font-size:13px;
+    font-size:18px;
     outline: none;
-    padding-left: 20px;
+    padding-left: 5px;
+    width: 500px;
 }
 
 .buttons {
@@ -145,29 +154,6 @@ li.advanced-li {
     padding: 5px;
 }
 
-/* .advanced-row > input,
-.advanced-row > button {
-    padding: .5em;
-} */
-
-/* @media screen and (min-width: 768px) {
-   	.advanced-row > input {
-    	flex: 3;  
-    }
-}
-
-@media screen and (min-width: 992px) {
-   	.advanced-row > input {
-    	flex: 4;  
-    }
-}
- 
-@media screen and (min-width: 1200px) {
-   	.advanced-row > input {
-    	flex: 5;  
-    }
-} */
-
 .advanced-row > input[type=text]:focus {
     outline: 1px solid blue;   
 }
@@ -179,6 +165,7 @@ button#advanced-button {
     cursor: pointer;
     margin-top: 10px;
     margin-right: 40vw;
+    text-align: center;
 }
 
 /* Advanced Form End */

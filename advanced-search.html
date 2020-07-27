@@ -15,51 +15,48 @@
                 </ul>
             </nav>
 
-            <div id="title">
+            <a href="index.html"><div id="title">
                 <h2 style="color: blue" >G</h2>
                 <h2 style="color: red" >o</h2>
                 <h2 style="color: yellow" >o</h2>
                 <h2 style="color: blue" >g</h2>
                 <h2 style="color: green" >l</h2>
                 <h2 style="color: red" >e</h2>
-            </div>
-
-        </div>
+                </div>
+            </a>
 
         <p>Find pages with...</p>
 
-    <form>
-        <ul class="container">
-    
-            <li class="advanced-row">
-                <label for="all">all these words:</label>
-                <input type="text" id="all">
-            </li>
-        
-            <li class="advanced-row">
-                <label for="this">this exact word or phrase:</label>
-                <input type="text" id="this">
-            </li>
-        
-            <li class="advanced-row">
-                <label for="any">any of these words:</label>
-                <input type="text" id="any">
-            </li>
+            <form action="https://google.com/search" method="GET">
 
-            <li class="advanced-row">
-                <label for="none">none of these words:</label>
-                <input type="text" id="none">
-            </li>
+                <ul class="container">
+                    <li class="advanced-row">
+                        <label for="all">all these words:</label>
+                        <input type="text" id="all" name="as_q">
+                    </li>
+                
+                    <li class="advanced-row">
+                        <label for="this">this exact word or phrase:</label>
+                        <input type="text" id="this" name="as_epq">
+                    </li>
+                
+                    <li class="advanced-row">
+                        <label for="any">any of these words:</label>
+                        <input type="text" id="any" name="as_oq">
+                    </li>
 
-            <li class="advanced-row">
-            <button id="advanced-button" type="submit">Advanced Search</button>
-            </li>
-        
-        </ul>
-    </form>
+                    <li class="advanced-row">
+                        <label for="none">none of these words:</label>
+                        <input type="text" id="none" name="as_eq">
+                    </li>
+
+                    <li class="advanced-row">
+                    <button id="advanced-button" type="dubmit" name="btnK" method="post" value="Google Search">Advanced Search</button>
+                    </li>
+                </ul>
+            </form>
             <div class="space">
             </div>
-
         </div>
     </body>
 </html>

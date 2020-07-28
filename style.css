@@ -192,6 +192,7 @@ button#advanced-button {
     text-align: center;
     float: center;
     margin-top: 5px;
+    border-radius: 4px;
 }
 
 .advanced-row:after {

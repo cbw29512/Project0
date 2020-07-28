@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>Advanced Search</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -15,48 +15,54 @@
                 </ul>
             </nav>
 
-            <a href="index.html"><div id="title">
-                <h2 style="color: blue" >G</h2>
-                <h2 style="color: red" >o</h2>
-                <h2 style="color: yellow" >o</h2>
-                <h2 style="color: blue" >g</h2>
-                <h2 style="color: green" >l</h2>
-                <h2 style="color: red" >e</h2>
+            <a href="index.html" style="text-decoration-line: none" ><div id="title">
+                <h2 style="color: blue">G</h2>
+                <h2 style="color: red">o</h2>
+                <h2 style="color: yellow">o</h2>
+                <h2 style="color: blue">g</h2>
+                <h2 style="color: green">l</h2>
+                <h2 style="color: red">e</h2>
                 </div>
             </a>
 
         <p>Find pages with...</p>
-
             <form action="https://google.com/search" method="GET">
 
-                <ul class="container">
-                    <li class="advanced-row">
+                <div class="container">
+                    
+                    <div class="advanced-label">
                         <label for="all">all these words:</label>
+                    </div>
+                    <div class="advanced-input">
                         <input type="text" id="all" name="as_q">
-                    </li>
-                
-                    <li class="advanced-row">
+                    </div>
+                    
+                    <div class="advanced-label">
                         <label for="this">this exact word or phrase:</label>
+                    </div>
+                    <div class="advanced-input">
                         <input type="text" id="this" name="as_epq">
-                    </li>
-                
-                    <li class="advanced-row">
+                    </div>
+            
+                    <div class="advanced-label">
                         <label for="any">any of these words:</label>
+                    </div>
+                    <div class="advanced-input">
                         <input type="text" id="any" name="as_oq">
-                    </li>
-
-                    <li class="advanced-row">
+                    </div>
+            
+                    <div class="advanced-label">
                         <label for="none">none of these words:</label>
+                    </div>
+                    <div class="advanced-input">
                         <input type="text" id="none" name="as_eq">
-                    </li>
-
-                    <li class="advanced-row">
-                    <button id="advanced-button" type="dubmit" name="btnK" method="post" value="Google Search">Advanced Search</button>
-                    </li>
-                </ul>
+                    </div>
+        
+                    <div class="advanced-label">
+                        <button id="advanced-button" type="submit" name="btnK" method="post" value="Google Search">Advanced Search</button>
+                    </div>
+                </div>
             </form>
-            <div class="space">
-            </div>
         </div>
     </body>
 </html>
